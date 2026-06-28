@@ -12,7 +12,7 @@ import (
 	"github.com/kvaster/kres-netlinkd/netlinkd"
 )
 
-var socketPath = flag.String("socket", "/run/kres-netlinkd.sock", "unix socket path to listen on")
+var socketPath = flag.String("socket", "/var/lib/knot-resolver/kres-netlinkd.sock", "unix socket path to listen on")
 var family = flag.String("family", "inet", "nftables table family (inet/ip/ip6)")
 var table = flag.String("table", "route", "nftables table name")
 var setPrefix = flag.String("set-prefix", "blocked-", "prefix of the ipv4 set name")
